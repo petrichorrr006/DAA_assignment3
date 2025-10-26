@@ -2,9 +2,9 @@ Minimum Spanning Tree Algorithms – Analytical Report
 1. Introduction
 This report presents an analysis of two classical Minimum Spanning Tree (MST) algorithms — Prim’s and Kruskal’s — implemented in Java.
 The study aims to evaluate their correctness, efficiency, and scalability across datasets of varying sizes and densities.
-Four datasets were generated in JSON format: Small, Medium, Large, and Extra Large, ranging from fewer than 10 vertices up to over 1,000 vertices.
+3 datasets were generated in JSON format: Small, Medium, Large, ranging from fewer than 10 vertices up to 1,000 vertices.
 
-2. Results Summary
+3. Results Summary
 The algorithms were executed on multiple graphs per dataset.
 Each test recorded the total cost of the MST, execution time (in milliseconds), and the number of algorithmic operations performed.
  <img width="864" height="597" alt="image" src="https://github.com/user-attachments/assets/34e649be-f3e7-4b01-a271-ddf360a5c24c" />
@@ -37,15 +37,15 @@ Practical differences:
 
 5. Conclusions
 Based on both theoretical analysis and experimental results:
- 1.	Correctness:
+Correctness:
  Both Prim’s and Kruskal’s algorithms consistently generated valid MSTs with identical total costs.
- 2.	Performance:
+Performance:
  •	For small and medium graphs (up to ~300 vertices), both algorithms are nearly equivalent in speed.
  •	For dense graphs, Prim’s algorithm tends to be slightly faster due to direct vertex-based selection.
  •	For large or sparse graphs, Kruskal’s algorithm performs better and scales more efficiently.
- 3.	Scalability:
+Scalability:
  As graph size increases beyond 1,000 vertices, Kruskal’s algorithm demonstrates better stability and lower growth in execution time.
- 4.	Implementation complexity:
+Implementation complexity:
  Kruskal’s is simpler to implement and debug; Prim’s requires careful management of priority queues.
 
 6. Final Remarks
