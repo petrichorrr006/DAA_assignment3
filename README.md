@@ -40,9 +40,9 @@ Based on both theoretical analysis and experimental results:
 1.	Correctness:
 Both Prim’s and Kruskal’s algorithms consistently generated valid MSTs with identical total costs.
 2.	Performance:
-o	For small and medium graphs (up to ~300 vertices), both algorithms are nearly equivalent in speed.
-o	For dense graphs, Prim’s algorithm tends to be slightly faster due to direct vertex-based selection.
-o	For large or sparse graphs, Kruskal’s algorithm performs better and scales more efficiently.
+•	For small and medium graphs (up to ~300 vertices), both algorithms are nearly equivalent in speed.
+•	For dense graphs, Prim’s algorithm tends to be slightly faster due to direct vertex-based selection.
+•	For large or sparse graphs, Kruskal’s algorithm performs better and scales more efficiently.
 3.	Scalability:
 As graph size increases beyond 1,000 vertices, Kruskal’s algorithm demonstrates better stability and lower growth in execution time.
 4.	Implementation complexity:
