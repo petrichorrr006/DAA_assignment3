@@ -7,7 +7,8 @@ Four datasets were generated in JSON format: Small, Medium, Large, and Extra Lar
 2. Results Summary
 The algorithms were executed on multiple graphs per dataset.
 Each test recorded the total cost of the MST, execution time (in milliseconds), and the number of algorithmic operations performed.
- 
+ <img width="864" height="597" alt="image" src="https://github.com/user-attachments/assets/34e649be-f3e7-4b01-a271-ddf360a5c24c" />
+
 Observations:
 •	Both algorithms always produced identical total MST costs, confirming their correctness.
 •	Execution time and operation counts grew with the number of vertices and edges.
@@ -27,9 +28,8 @@ The sorting step (O(E log E)) dominates performance but scales better than Prim�
 The performance graphs (if visualized) would show Kruskal’s time rising more slowly than Prim’s as the graph grows beyond several hundred vertices.
 
 4. Theoretical vs. Practical Comparison
-Algorithm	Time Complexity	Space Complexity	Best For	Observed Behavior
-Prim	O(V²) or O(E log V) (heap)	O(V + E)	Dense graphs	Faster on small–medium dense graphs
-Kruskal	O(E log E)	O(E)	Sparse graphs	More scalable on large, sparse networks
+<img width="627" height="139" alt="image" src="https://github.com/user-attachments/assets/6201c7d2-a3bd-433d-a546-3533a06a9a31" />
+
 Practical differences:
 •	Prim’s algorithm handled smaller graphs quickly but became slower on extra-large datasets due to heavy heap operations.
 •	Kruskal’s algorithm consistently required fewer operations and less memory for sparse input graphs.
